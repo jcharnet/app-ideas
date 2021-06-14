@@ -25,12 +25,16 @@
 hs_err_pid*
 
 # compiled output
-/dist
-/tmp
+**/dist
+**/tmp
 /out-tsc
+**/build
+**/.gradle*
+
 
 # dependencies
-/node_modules
+**/node_modules
+
 
 # IDEs and editors
 /.idea
