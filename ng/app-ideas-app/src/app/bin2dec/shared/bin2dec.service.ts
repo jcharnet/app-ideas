@@ -31,8 +31,8 @@ export class Bin2DecService {
   }
   
   private handleError(res: HttpErrorResponse) {
-    console.error("Error: ", res.error);
-    return throwError(res.error || 'Server Error')
+    console.error("Error: ", res);
+    return throwError(res || 'Server Error')
   }
 }
 

@@ -37,7 +37,11 @@ export class TokenInterceptor implements HttpInterceptor {
             console.log('REDIRECTING TO LOGIN')
             this.router.navigate(['/login']);
           } else {
-            return throwError(httpErrorResponse);
+            if (httpErrorResponse.status !== 0) {
+              return throwError(httpErrorResponse.error);  
+            } else { 
+              return throwError(httpErrorResponse);
+            }
           }
         }
       )
