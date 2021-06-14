@@ -17,8 +17,8 @@ Before running this sample, you will need the following:
 To run this application, you first need to clone this repo and then enter into this directory:
 
 ```bash
-git clone https://github.com/okta/samples-js-angular.git
-cd samples-js-angular/custom-login
+git clone https://github.com/jcharnet/app-ideas.git
+cd ng/app-ideas-app
 ```
 
 Then install dependencies:
